@@ -15,7 +15,10 @@ class Component {
     string $slot = null,
     array $slots = [],
   ): string|null {
-    $data = array_merge($props, ['slot' => $slot, 'slots' => $slots]);
+    $data = array_merge(kirby()->data, $props, [
+      'slot' => $slot,
+      'slots' => $slots,
+    ]);
 
     $file = kirby()->root('components') . "/$name.php";
     if (file_exists($file)) {
