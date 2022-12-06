@@ -1,0 +1,12 @@
+{
+  "name": "kirby-components",
+  "scripts": {
+    "dev": "php -q -S localhost:8888  -t ./example/ ./example/router.php"
+  },
+  "author": "arnoson",
+  "license": "MIT",
+  "devDependencies": {
+    "@prettier/plugin-php": "^0.19.2",
+    "prettier": "^2.8.0"
+  }
+}

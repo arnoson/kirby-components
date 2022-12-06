@@ -1,0 +1,25 @@
+{
+  "name": "arnoson/kirby-components",
+  "description": "Build your kirby site from reusable components",
+  "type": "kirby-plugin",
+  "version": "0.0.1",
+  "require": {
+    "getkirby/composer-installer": "^1.2"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "arnoson",
+      "email": "omasocke@hotmail.de"
+    }
+  ],
+  "require-dev": {
+    "getkirby/cms": "^3.8"
+  },
+  "config": {
+    "allow-plugins": {
+      "optimize-autoloader": true,
+      "getkirby/composer-installer": true
+    }
+  }
+}
