@@ -1,12 +1,12 @@
 <h1><?= $page->title() ?></h1>
 
-<?= beginComponent('menu') ?>
-<?= slot('title') ?>Menu<?= endSlot() ?>
+<?php beginComponent('menu'); ?>
+<?php slot('title'); ?>Menu<?= endSlot() ?>
 <ul>
   <li>
-    <?= beginComponent('link', ['url' => '/']) ?>
+    <?php beginComponent('link', ['url' => '/']); ?>
     <h3>Home</h3>
-    <?= endComponent() ?>
+    <?php endComponent(); ?>
   </li>
 </ul>
-<?= endComponent() ?>
+<?php endComponent(); ?>
